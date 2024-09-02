@@ -1,0 +1,30 @@
+.navbar {
+    margin: 15px 30px;
+    height: 40px;
+}
+
+.navbar .left {
+    display: grid;
+    grid-auto-flow: column;
+    width: fit-content;
+    column-gap: 50px;
+    float: left;
+}
+
+.navbar a {
+    color: #bbb;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.navbar a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.navbar .right {
+    display: grid;
+    grid-auto-flow: column;
+    width: fit-content;
+    column-gap: 50px;
+    float: right;
+}
