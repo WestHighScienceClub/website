@@ -1,6 +1,7 @@
 import "../assets/css/app.css";
 import "../assets/css/board.css"
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import { Helmet } from "react-helmet";
 
 const boardPresidents = [
@@ -9,64 +10,77 @@ const boardPresidents = [
         position: "Co-President",
         id: "mona_sugawara",
         science: "Medicine",
-        grade: "2026",
+        grade: "Junior",
     },
     {
         name: "Qinghan Jia",
         position: "Co-President",
         id: "qinghan_jia",
         science: "Life Sciences",
-        grade: "2025",
+        grade: "Senior",
     },
 ];
 
 const boardMembers = [
     {
-        name: "Isaac Goldberg",
-        position: "Treasurer",
-        id: "isaac_goldberg",
-        science: "Computer Science",
-        grade: "2025",
+        name: "Yuma Maeda",
+        position: "Secretary",
+        id: "yuma_maeda",
+        science: "Veterinary Sciences",
+        grade: "Sophomore",
     },
+
     {
         name: "Shoudao Zhang",
         position: "Lab Lead",
         id: "shoudao_zhang",
         science: "Engineering",
-        grade: "2026",
-    },
-    {
-        name: "Yuma Maeda",
-        position: "Secretary",
-        id: "yuma_maeda",
-        science: "Veterinary Sciences",
-        grade: "2027",
+        grade: "Junior",
     },
     {
         name: "Keene Lei",
         position: "Assistant Publicist",
         id: "keene_lei",
         science: "Not Chemistry",
-        grade: "2026",
-    }
+        grade: "Junior",
+    },
+    {
+        name: "Isaac Goldberg",
+        position: "Treasurer",
+        id: "isaac_goldberg",
+        science: "Computer Science",
+        grade: "Senior",
+        badge: "Website Dev",
+    },
 ];
 
 const gradeColors = {
-    "2025": "#00b330",
-    "2026": "#0099ff",
-    "2027": "#9d3bff",
+    "Senior": "#00b330",
+    "Junior": "#0099ff",
+    "Sophomore": "#9d3bff",
 };
 
+function positionColor(pos) {
+    switch (pos) {
+        case "Co-President":
+            return ["#e8b200", "#ffd859"];
+        default:
+            return ["#e64100", "#ff6e33"];
+    }
+}
+
 function makeCard(person) {
+    let [primary, border] = positionColor(person.position);
     return (
         <div className="card" key={person.id}>
-            <p className="grade" style={{"background-color": gradeColors[person.grade]}}>C.O. {person.grade}</p>
-            <img src={`/static/board/${person.id}.jpg`}></img>
-            {/* <img src="https://static.thenounproject.com/png/3244607-200.png"></img> */}
+            <p className="grade" style={{"backgroundColor": gradeColors[person.grade]}}>{person.grade}</p>
+            <div className="image-container">
+                <img src={`/static/board/${person.id}.jpg`}></img>
+            </div>
             <p className="name">{person.name}</p>
-            {/* <p className="name">Placeholder name</p> */}
-            <p className="position">{person.position}</p>
-            <p className="science">Favorite Science: {person.science}</p>
+            <p className="position" style={{"backgroundColor": primary, "borderColor": border}}>{person.position}</p>
+            {person.badge && <p className="badge" style={{"backgroundColor": primary, "borderColor": border}}>{person.badge}</p>}
+            <p className="science">Fav Science: {person.science}</p>
         </div>
     );
 }
@@ -81,10 +95,14 @@ export default function Board() {
                 <title>WHS Science Club - Board</title>
             </Helmet>
 
-            <Navbar />
-            <h1>Board</h1>
-            <div className="board presidents">{boardPresidentsElems}</div>
-            <div className="board members">{boardMembersElems}</div>
+            <div className="page">
+                <Navbar />
+                <h1>Club Board</h1>
+                <div className="board presidents">{boardPresidentsElems}</div>
+                <div className="board members">{boardMembersElems}</div>   
+            </div>
+
+            <Footer />
         </div>
     );
 }

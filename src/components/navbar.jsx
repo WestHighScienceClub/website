@@ -4,7 +4,10 @@ function Navbar() {
     return (
         <div className="navbar">
             <div className="left">
-                <a href="/">Home</a>
+                <a className="home" href="/">
+                    <img src="/static/logos/favicon.png"></img>
+                    <p>WHS Science Club</p>
+                </a>
                 <a href="/board">Board</a>
             </div>
 

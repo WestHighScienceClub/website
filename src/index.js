@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './assets/css/index.css';
-import Root from './routes/root';
+import Home from './routes/home';
 import Board from './routes/board'
 import Error404 from './errors/404';
 import reportWebVitals from './reportWebVitals';
@@ -10,7 +10,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Home />,
     errorElement: <Error404 />,
   },
   {

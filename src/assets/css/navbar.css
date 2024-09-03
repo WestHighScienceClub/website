@@ -11,10 +11,24 @@
     float: left;
 }
 
+.navbar .left .home img {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.navbar .left .home p {
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
 .navbar a {
     color: #bbb;
     text-decoration: none;
     transition: 0.2s ease;
+    margin: auto;
 }
 .navbar a:hover {
     color: white;
