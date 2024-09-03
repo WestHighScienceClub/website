@@ -1,0 +1,44 @@
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.board .card {
+    width: 250px;
+    margin: 20px;
+    background-color: #751700;
+    border-radius: 20px;
+    padding: 15px;
+    position: relative;
+    transition: 0.2s ease;
+}
+.board .card:hover {
+    transform: scale(1.1);
+}
+
+.board .card .grade {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    margin: 0;
+    background-color: #0f0;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.board .card img {
+    width: 250px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 19px;
+    transition: 0.2s ease;
+}
+.board .card:hover img {
+    border-radius: 2px;
+}
+
+.board .card .name {
+    font-size: 24px;
+    margin: 10px 0;
+}

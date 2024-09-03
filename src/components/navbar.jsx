@@ -9,7 +9,7 @@ function Navbar() {
             </div>
 
             <div className="right">
-                <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/whs.scijo/" target="_blank"><i className="fa-brands fa-instagram"></i></a>
             </div>
         </div>
     )
