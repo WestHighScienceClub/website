@@ -1,14 +1,20 @@
 .navbar {
-    margin: 15px 30px;
+    margin: 0 30px 50px 30px;
     height: 40px;
 }
 
-.navbar .left {
+.navbar .left, .navbar .right {
     display: grid;
     grid-auto-flow: column;
     width: fit-content;
     column-gap: 50px;
+    height: 100%;
+}
+.navbar .left {
     float: left;
+}
+.navbar .right {
+    float: right;
 }
 
 .navbar .left .home img {
@@ -33,12 +39,4 @@
 .navbar a:hover {
     color: white;
     transform: scale(1.15);
-}
-
-.navbar .right {
-    display: grid;
-    grid-auto-flow: column;
-    width: fit-content;
-    column-gap: 50px;
-    float: right;
 }

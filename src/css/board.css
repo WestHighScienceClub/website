@@ -5,8 +5,8 @@
 }
 
 .board .card {
-    width: 250px;
-    margin: 20px;
+    width: 240px;
+    margin: 16px;
     background-color: #751700;
     border-radius: 20px;
     padding: 15px;
@@ -15,7 +15,7 @@
     box-shadow: 0 0 10px 4px #222;
 }
 .board .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.075);
 }
 
 .board .card .grade {
@@ -32,7 +32,7 @@
     overflow: hidden;
     border-radius: 19px;
     transition: 0.3s ease;
-    width: 250px;
+    width: 240px;
     height: 270px;
 }
 

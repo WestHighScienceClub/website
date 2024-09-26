@@ -1,4 +1,4 @@
-import "../assets/css/navbar.css";
+import "../css/navbar.css";
 
 function Navbar() {
     return (
@@ -8,11 +8,13 @@ function Navbar() {
                     <img src="/static/logos/favicon.png"></img>
                     <p>WHS Science Club</p>
                 </a>
+                <a href="/leaderboard">Leaderboard</a>
+                <a href="/events">Events</a>
                 <a href="/board">Board</a>
             </div>
 
             <div className="right">
-                <a href="https://www.instagram.com/whs.scijo/" target="_blank"><i className="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/whs.sciclub/" target="_blank"><i className="fa-brands fa-instagram"></i> Instagram</a>
             </div>
         </div>
     )

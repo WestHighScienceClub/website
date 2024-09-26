@@ -1,5 +1,5 @@
-import "../assets/css/app.css";
-import "../assets/css/board.css"
+import "../css/app.css";
+import "../css/board.css"
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { Helmet } from "react-helmet";
