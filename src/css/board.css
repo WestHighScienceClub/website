@@ -55,7 +55,7 @@
 .board .card .name {
     font-family: "Rubik";
     font-size: 24px;
-    margin: 10px 0 10px 0;
+    margin: 10px auto;
 }
 
 .board .card .position, .board .card .badge {

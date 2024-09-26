@@ -28,11 +28,11 @@ export default function Events() {
                 <div className="events">
                     <Carousel autoPlay={true} infiniteLoop={true} interval={5000} showStatus={false} emulateTouch={true}>
                         <div className="event">
-                            <h3>Club Rush</h3>
-                            <p>September 13</p>
+                            <h3>Pre-Lab Meeting #1</h3>
+                            <p>October 9</p>
                         </div>
                         <div className="event">
-                            <h3>First Meeting</h3>
+                            <h3>Lab Meeting #1</h3>
                             <p>TBD</p>
                         </div>
                     </Carousel>
