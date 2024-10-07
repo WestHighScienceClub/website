@@ -41,7 +41,7 @@ const boardMembers = [
         name: "Keene Lei",
         position: "Assistant Publicist",
         id: "keene_lei",
-        science: "Not Chemistry",
+        science: "Can't Decide",
         grade: "Junior",
     },
     {
@@ -50,7 +50,7 @@ const boardMembers = [
         id: "isaac_goldberg",
         science: "Computer Science",
         grade: "Senior",
-        badge: "Website Dev",
+        otherPosition: "Website Dev",
     },
 ];
 
@@ -72,14 +72,14 @@ function positionColor(pos) {
 function makeCard(person) {
     let [primary, border] = positionColor(person.position);
     return (
-        <div className="card" key={person.id}>
+        <div className="board-member" key={person.id}>
             <p className="grade" style={{"backgroundColor": gradeColors[person.grade]}}>{person.grade}</p>
             <div className="image-container">
                 <img src={`/static/board/${person.id}.jpg`}></img>
             </div>
             <p className="name">{person.name}</p>
             <p className="position" style={{"backgroundColor": primary, "borderColor": border}}>{person.position}</p>
-            {person.badge && <p className="badge" style={{"backgroundColor": primary, "borderColor": border}}>{person.badge}</p>}
+            {person.otherPosition && <p className="otherPosition" style={{"backgroundColor": primary, "borderColor": border}}>{person.otherPosition}</p>}
             <p className="science">Fav Science: {person.science}</p>
         </div>
     );

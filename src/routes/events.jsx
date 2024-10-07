@@ -7,11 +7,29 @@ import "../css/events.css";
 
 const events = [
     {
-        title: "Club Rush",
-        date: "September 13",
-        description: "hello world"
+        title: <>Pre-Lab Meeting</>,
+        date: "Date TBD",
+        location: "Room TBD",
+        description: <></>,
+    },
+    {
+        title: <>Hydroponics Meeting</>,
+        date: "Date TBD",
+        location: "Room TBD",
+        description: <>Our first lab!</>
     }
 ];
+
+const eventsElems = events.map((event) => {
+    return (
+        <div className="event">
+            <p className="date">{event.date}</p>
+            <h3>{event.title}</h3>
+            <p className="room">{event.location}</p>
+            <p>{event.description}</p>
+        </div>
+    );
+});
 
 export default function Events() {
     return (
@@ -26,15 +44,8 @@ export default function Events() {
                 <h1>Upcoming Events</h1>
 
                 <div className="events">
-                    <Carousel autoPlay={true} infiniteLoop={true} interval={5000} showStatus={false} emulateTouch={true}>
-                        <div className="event">
-                            <h3>Pre-Lab Meeting #1</h3>
-                            <p>October 9</p>
-                        </div>
-                        <div className="event">
-                            <h3>Lab Meeting #1</h3>
-                            <p>TBD</p>
-                        </div>
+                    <Carousel autoPlay={true} infiniteLoop={true} interval={15000} showStatus={false} emulateTouch={true}>
+                        {eventsElems}
                     </Carousel>
                 </div>
             </div>

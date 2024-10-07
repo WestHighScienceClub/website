@@ -9,6 +9,7 @@ import Board from './routes/board'
 import Error404 from './errors/404';
 import Events from './routes/events';
 import Leaderboard from './routes/leaderboard';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import Login from './routes/login';
 
 const router = createBrowserRouter([
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
     {
         path: "/leaderboard",
         element: <Leaderboard />
-    }
+    },
     // {
     //     path: "/login",
     //     element: <Login />
