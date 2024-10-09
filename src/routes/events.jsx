@@ -7,16 +7,16 @@ import "../css/events.css";
 
 const events = [
     {
-        title: <>Pre-Lab Meeting</>,
-        date: "Date TBD",
-        location: "Room TBD",
-        description: <></>,
+        title: <>Hydroponics Pre-Lab Meeting</>,
+        date: "October 9",
+        location: "Room 4203",
+        description: <>Come to our first pre-lab meeting to learn some science and play a fun game as we prepare for our hydroponics lab!</>,
     },
     {
-        title: <>Hydroponics Meeting</>,
+        title: <>Hydroponics Lab Meeting</>,
         date: "Date TBD",
-        location: "Room TBD",
-        description: <>Our first lab!</>
+        location: "Room 4203",
+        description: <>Our first lab! Make sure to first come to the pre-lab meeting to prepare!</>
     }
 ];
 

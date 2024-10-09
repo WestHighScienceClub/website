@@ -1,5 +1,26 @@
+@font-face {
+    font-family: "Formula1";
+    src: url("fonts/Formula1-Regular.otf");
+}
+
+@font-face {
+    font-family: "DINNextW1G-Medium";
+    src: url("fonts/DINNextW1G-Medium.otf");
+}
+
+@font-face {
+    font-family: "DINNextW1G-Regular";
+    src: url("fonts/DINNextW1G-Regular.otf");
+}
+
+@font-face {
+    font-family: "DINNextW1G-Bold";
+    src: url("fonts/DINNextW1G-Bold.otf");
+}
+
 body {
-    font-family: "Inter";
+    font-family: "DINNextW1G-Regular" !important;
+    font-weight: 800;
     background-color: #333;
     color: #eee;
 }

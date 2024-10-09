@@ -24,6 +24,10 @@
     line-height: 20px;
 }
 
+.entry:not(.headers) p {
+    text-shadow: 0 0 5px #333;
+}
+
 .entry p {
     transition: 0.3s ease;
 }
@@ -60,6 +64,16 @@
     background-color: #a36200;
 }
 
+.entry:not(.default):not(.headers) {
+    /* height: 45px; */
+    padding: 12px 0;
+    font-size: 22px;
+}
+
+.entry.default {
+    font-size: 18px;
+}
+
 .leftinfo {
     display: flex;
     flex-basis: 50%;
@@ -67,7 +81,7 @@
 
 .points {
     margin: auto 10px;
-    font-family: "VeniteAdoremus";
+    font-family: "Formula1";
     cursor: default;
     flex-basis: 25%;
     text-align: center;
@@ -75,7 +89,7 @@
 
 .wins {
     margin: auto 10px;
-    font-family: "VeniteAdoremus";
+    font-family: "Formula1";
     flex-basis: 25%;
     cursor: default;
 }
@@ -96,7 +110,7 @@
 }
 
 .header {
-    font-family: Inter !important;
+    font-family: DINNextW1G-Medium !important;
 }
 
 .header-wins {

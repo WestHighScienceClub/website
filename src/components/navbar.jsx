@@ -40,6 +40,7 @@ export default function NavbarComponent() {
                         <Nav.Link href="/leaderboard">Leaderboard</Nav.Link>
                         <Nav.Link href="/events">Events</Nav.Link>
                         <Nav.Link href="/board">Board</Nav.Link>
+                        <Nav.Link href="https://forms.gle/n8RW1VGyJAAsdCgp7" target="_blank">Membership Form <i className="fa-solid fa-up-right-from-square"></i></Nav.Link>
                         {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
