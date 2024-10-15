@@ -75,7 +75,7 @@ export default function Leaderboard() {
                             <p className="name header">Name</p>
                         </div>
                         <p className="points header">Points</p>
-                        <p className="wins header">Lab Wins</p>
+                        <p className="wins header">Wins</p>
                     </div>
 
                     {isLoading ? 
